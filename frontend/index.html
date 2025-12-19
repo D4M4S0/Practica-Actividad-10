@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Motos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🏍️ Tienda de Motos</h1>
+    <button onclick="toggleCarrito()">🛒 Ver carrito</button>
+</header>
+
+<main class="contenedor">
+
+    <!-- MOTO 1 -->
+    <div class="card">
+        <img src="img/Kawasaki400.jpg" alt="Kawasaki Ninja 400">
+        <h3>Kawasaki Ninja 400</h3>
+        <p>Deportiva ligera, ideal para ciudad y carretera.</p>
+        <span>$6500</span>
+        <button onclick="agregarCarrito('Kawasaki Ninja 400', 6500)">Agregar al carrito</button>
+    </div>
+
+    <!-- MOTO 2 -->
+    <div class="card">
+        <img src="img/Z900.jgp.jpg" alt="Kawasaki Z900">
+        <h3>Kawasaki Z900</h3>
+        <p>Naked potente con excelente rendimiento.</p>
+        <span>$9800</span>
+        <button onclick="agregarCarrito('Kawasaki Z900', 9800)">Agregar al carrito</button>
+    </div>
+
+    <!-- MOTO 3 -->
+    <div class="card">
+        <img src="img/Yamaha-MT09.jpg" alt="Yamaha MT-09">
+        <h3>Yamaha MT-09</h3>
+        <p>Diseño agresivo y gran torque.</p>
+        <span>$11200</span>
+        <button onclick="agregarCarrito('Yamaha MT-09', 11200)">Agregar al carrito</button>
+    </div>
+
+</main>
+
+<!-- CARRITO -->
+<section id="carrito" class="carrito oculto">
+    <h2>🛒 Carrito de compras</h2>
+    <ul id="listaCarrito"></ul>
+    <h3>Total: $<span id="total">0</span></h3>
+    <button onclick="finalizarCompra()">Finalizar compra</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
